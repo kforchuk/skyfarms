@@ -1,0 +1,68 @@
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+#about-us{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 70vh;
+    margin-top: -3rem;
+}
+
+.about-left {
+    grid-column: 1;
+    background-image: url(wheatstalk-about.png);
+    background-size: cover;
+}
+
+.about-right {
+    grid-column: 2;
+    background-color: rgba(209, 108, 40);
+    color: white;
+    justify-content: center;
+    padding:2rem;
+}
+.about-content {
+    background-color: rgba(244, 148, 83, 0.5);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.about-right p {
+    margin:2rem;
+    padding: 1rem;
+    font-size: clamp(.7rem, 1.4vw, 3.8rem);
+    padding-top: 2rem;
+}
+
+.about-left {
+    color: white;
+}
+
+.about-left h2 {
+    margin: 4rem;
+    font-size: clamp(1.5rem, 3vw, 5rem);
+    color: rgba(255, 255, 255, 0.7)
+}
+
+#why-us{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 4rem;
+    padding: 4rem;
+}
+
+#why-us h2 {
+    font-size: clamp(1.5rem, 3vw, 5rem);
+    margin: auto;
+}
+.why-box {
+    border: solid 10px black;
+}
+
+.why-box p {
+    margin:2rem;
+    padding: 1rem;
+    font-size: clamp(.7rem, 1.4vw, 3.8rem);
+    padding-top: 2rem;
+}
+

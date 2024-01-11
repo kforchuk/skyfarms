@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Genreal Adjustments */
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 5rem);
+    font-weight: 700;
+    margin: 2rem;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    margin: 1rem;
+    font-size: clamp(.8rem, 2vw, 4.5rem);
+    font-weight: 500;
+    font-kerning: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(.7rem, 1.4vw, 3.8rem);
+    margin-left: 2rem;
+    margin-right: rem;
+    font-weight: 200;
+}
+
+.orange-emphasis {
+    color: rgb(209, 108, 40);
+    font-weight: 600;
+    font-size: clamp(.8rem, 1.55vw, 4.2rem);
+}
+
+.orange-emphasis-v50 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: rgb(209, 108, 40);
+}
+
+/* .scroll-snap-container {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: normal;
+    scroll-behavior: smooth scroll;
+    overflow-y: scroll;
+    overflow: hidden;
+    height: 100vh;
+} */
+
+/* .scroll-container {
+    height: 100vh;
+} */
+
+.orange-heading {
+    grid-column: 2;
+    color:rgba(255,255,255,0.9);
+    font-size: 1.75rem;
+    justify-self: end;
+    align-self: end;
+}
+
+.blue-heading {
+    grid-column: 1;
+    color:rgba(255,255,255,0.9);
+    font-size: 1.75rem;
+    justify-self: start;
+    align-self: end;
+    padding: 1rem;
+
+}
+.orange {
+    color:white;
+    margin:auto;
+    padding: 2rem;
+}
+
+.blue {
+    color:white;
+    margin: auto;
+    padding: 2rem;
+}
+
+.blue-wrapper {
+    grid-column: 2;
+    background-color: rgba(59, 108, 167, 0.6);
+    display:grid;
+}
+
+.orange-wrapper {
+    grid-column: 1;
+    background-color: rgba(209, 108, 40, 0.6);
+    display:grid;
+}
+
+#video-carousel {
+    display: flex;
+    margin: 2rem;
+}
+
+video{
+    width: 60%;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.video-subheader {
+    color: rgb(59, 108, 167);
+}
+
+.video-text h2 {
+    color: rgb(209, 108, 40);
+}
+
+.h2_v50 {
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: 700;
+}
+
+#overview {
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    background-color: rgba(59, 108, 167, 0.6);
+    height:60%;
+}
+
+#overview .blue img {
+    width: 100%;
+    grid-column: 1;
+}
+
+#overview .blue-wrapper {
+    background-color: rgba(59, 108, 167, 0.0);
+}
+
+#overview .blue p {
+    background-color: rgba(208, 221, 238, 0.3);
+    border-radius: 5px;
+    padding: 1rem;
+    grid-column: 2;
+}
+
+#overview .blue {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Desktop View from 769px */
+
+@media all and (min-width: 768px) {
+
+.mobile-orange {
+    display:none;
+}
+
+.mobile-blue {
+    display:none;
+}
+
+#convenience .desktop-orange {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    position:relative;
+    background-image: url(convenience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+#convenience .orange-heading {
+    position:absolute;
+    justify-self: end;
+    align-self: end;
+    padding: 1rem;
+} 
+
+#intelligent .desktop-blue{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(night-flight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+}
+
+#roi .desktop-orange{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(ROI\ Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+}
+
+#roi .orange-heading {
+    position:absolute;
+    justify-self: end;
+    align-self: end;
+    padding: 1rem;
+
+}
+
+#spraying .desktop-blue{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(spraying-system.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+#spreading .desktop-orange{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(spreading-system.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    height: 90vh;
+}
+
+ #spreading .orange-heading{
+    position: absolute;
+    justify-self: end;
+    align-self: end;
+    padding: 1rem;
+
+} 
+}
+
+/* Mobile Views 768 and below */
+@media all and (max-width: 768px) {
+    .desktop-orange {
+        display:none;
+    }
+
+    .desktop-blue {
+        display:none;
+    }
+
+    .mobile-blue {
+        grid-column: 1;
+        background-color: rgba(59, 108, 167, 0.6);
+      }
+  
+      .mobile-orange {
+          grid-column: 1;
+          background-color: rgba(209, 108, 40, 0.6);
+      }
+  
+      .blue-wrapper {
+          background-color: rgba(59, 108, 167, 0.0);
+         
+      }
+      
+      .orange-wrapper {
+          background-color: rgba(209, 108, 40, 0.0);
+      }
+  
+    #convenience {
+        display:grid;
+        grid-template-columns: 80% 20%;
+        background-image: url(convenience.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; 
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 50vh;
+    }
+
+    #convenience h2{
+        margin-bottom: -1rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    
+    #intelligent {
+        display:grid;
+        grid-template-columns: 80% 20%;
+        background-image: url(night-flight.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 50vh;
+    }
+    #intelligent h2{
+        margin-bottom: -1.5rem;
+    }
+    
+    #roi {
+        display:grid;
+        grid-template-columns: 80% 20%;
+        background-image: url(ROI\ Background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 50vh;
+    }
+
+    #roi h2 {
+        margin-bottom: -1rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    
+    #spraying {
+        display:grid;
+        grid-template-columns: 80% 20%;
+        background-image: url(spraying-system.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 50vh;
+    }
+
+    #spraying h2 {
+        margin-bottom: -1.5rem;
+    }
+    
+    #spreading {
+        display:grid;
+        grid-template-columns: 80% 20%;
+        background-image: url(spreading-system.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:relative;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 50vh;
+        overflow-y: clip;
+    }
+    #spreading h2 {
+        margin-bottom: -1rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    h2{
+       margin:1rem;
+    }
+}
+
+
+/*UNUSED OR REDUNDANT*/
+/* #intelligent .blue-heading { 
+    position:absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+ #spraying .blue-heading {
+    position:absolute;
+    bottom: 1rem;
+    left: 1rem; 
+} */
