@@ -1,0 +1,11 @@
+.hero {
+    background-image: url(convenience.jpg);
+    height: 70vh;
+    margin-top: -5rem;
+}
+
+.hero img {
+    margin-top: -8rem;
+}
+
+

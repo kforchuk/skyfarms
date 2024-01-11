@@ -1,0 +1,38 @@
+footer {
+    background:linear-gradient(to top, #D16B28, #3E91C1 50%, #eee 85%, rgba(255, 255, 255, 0)90%);
+    height: 40vh;
+    display:grid;
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+}
+
+footer img {
+    width: 35%;
+
+}
+
+.footer-logo {
+    grid-column:2;
+    align-self: center;
+}
+
+footer .contact {
+    font-family: 'Open Sans', sans-serif;
+    color:#eee;
+    font-size: 1.75rem;
+    grid-column: 4;
+    align-self: center;
+    font-weight: 400;
+}
+
+footer .contact h4 {
+    margin-bottom: -1.5rem;
+}
+footer li {
+    list-style-type: none;
+}
+
+.footer-contact a {
+    color:#eee;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
