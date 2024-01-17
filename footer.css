@@ -40,7 +40,7 @@ footer li {
 
 @media (max-width:749px){
     footer {
-        background:linear-gradient(to top, #D16B28, #3E91C1 70%);
+        background:linear-gradient(to top, #3E91C1 , #D16B28 30%);
         display:grid;
         grid-template-columns: 12.5% 25% 25% 25% 12.5%;
     }
