@@ -2,28 +2,29 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+@media (min-width: 750px) {
 #about-us{
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 70vh;
-    margin-top: -3rem;
+    background-image: url(wheatstalk-about-expanded.png);
+    background-size: cover;
+    margin-top: 10rem;
 }
 
 .about-left {
     grid-column: 1;
-    background-image: url(wheatstalk-about.png);
-    background-size: cover;
+    align-self: last baseline;
+    color: white;
 }
 
 .about-right {
     grid-column: 2;
-    background-color: rgba(209, 108, 40);
     color: white;
     justify-content: center;
     padding:2rem;
+    background-color: rgba(244, 148, 83, 0.5);
 }
 .about-content {
-    background-color: rgba(244, 148, 83, 0.5);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -41,14 +42,15 @@
 .about-left h2 {
     margin: 4rem;
     font-size: clamp(1.5rem, 3vw, 5rem);
-    color: rgba(255, 255, 255, 0.7)
+    color: rgb(255, 255, 255)
 }
 
 #why-us{
     display: grid;
     grid-template-columns: 30% 70%;
-    margin-top: 4rem;
     padding: 4rem;
+    background-color: rgba(59, 108, 167, 0.6);
+    color: white;
 }
 
 #why-us h2 {
@@ -56,7 +58,7 @@
     margin: auto;
 }
 .why-box {
-    border: solid 10px black;
+    background-color: rgba(208, 221, 238, 0.3);
 }
 
 .why-box p {
@@ -65,4 +67,69 @@
     font-size: clamp(.7rem, 1.4vw, 3.8rem);
     padding-top: 2rem;
 }
+}
 
+@media (max-width:749px){
+    #about-us{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        background-image: url(wheatstalk-about-expanded.png);
+        background-size: cover;
+    }
+    
+    .about-left {
+        grid-column: 1;
+        align-self: last baseline;
+        color: white;
+    }
+    
+    .about-right {
+        grid-column: 2;
+        color: white;
+        justify-content: center;
+        padding:2rem;
+        background-color: rgba(244, 148, 83, 0.5);
+    }
+    .about-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .about-right p {
+        margin:2rem;
+        font-size: clamp(.7rem, 1.4vw, 3.8rem);
+        padding-top: .5rem;
+    }
+    
+    .about-left {
+        color: white;
+    }
+    
+    .about-left h2 {
+        margin: 4rem;
+        font-size: clamp(1.5rem, 3vw, 5rem);
+        color: rgb(255, 255, 255)
+    }
+    
+    #why-us{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding: 4rem;
+        background-color: rgba(59, 108, 167, 0.6);
+        color: white;
+    }
+    
+    #why-us h2 {
+        font-size: clamp(1.5rem, 3vw, 5rem);
+        margin: auto;
+        padding:1rem;
+    }
+    .why-box {
+        background-color: rgba(208, 221, 238, 0.3);
+    }
+    
+    .why-box p {
+        margin:2rem;
+        font-size: clamp(.7rem, 1.4vw, 3.8rem);
+        padding-top: .5rem;
+    }
+}

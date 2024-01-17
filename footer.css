@@ -1,5 +1,5 @@
 footer {
-    background:linear-gradient(to top, #D16B28, #3E91C1 50%, #eee 85%, rgba(255, 255, 255, 0)90%);
+    background:linear-gradient(to top, #D16B28, #3E91C1 70%);
     height: 40vh;
     display:grid;
     grid-template-columns: 12.5% 25% 25% 25% 12.5%;

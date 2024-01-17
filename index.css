@@ -1,5 +1,7 @@
 .hero {
     background-image: url(convenience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 70vh;
     margin-top: -5rem;
 }
