@@ -13,7 +13,7 @@
 
 .about-left {
     grid-column: 1;
-    align-self:  start;
+    align-self:  first-baseline;
     color: white;
 }
 
