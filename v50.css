@@ -242,7 +242,6 @@ p {
     position: relative;
     height: 90vh;
     scroll-snap-align: center;
-    overflow-y:clip;
 
 }
 
