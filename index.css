@@ -1,9 +1,7 @@
 .hero {
-    background-image: url(convenience.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 90vh;
     margin-top: -5rem;
+    z-index: 100;
 }
 
 .hero img {

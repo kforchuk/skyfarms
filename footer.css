@@ -1,11 +1,20 @@
-footer {
-    background:linear-gradient(to top, #D16B28, #3E91C1 70%);
+/* footer {
+    background:linear-gradient(to top, #3E91C1, #efad74 30%,#D16B28 60%);
     height: 30%;
     display:grid;
     height: 30vh;
     grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+    z-index: 1000;
+} */
+.footer-wrapper {
+    background:linear-gradient(to top, #3E91C1, #efad74 30%,#D16B28 60%);
+    height: 30%;
+    display:grid;
+    height: 40vh;
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+    align-items: end;
+    align-content: end;
 }
-
 footer img {
     width: 35%;
 
@@ -40,9 +49,12 @@ footer li {
 
 @media (max-width:749px){
     footer {
-        background:linear-gradient(to top, #3E91C1 , #D16B28 30%);
+        background:linear-gradient(to top, #3E91C1, #efad74 30%,#D16B28 60%);
         display:grid;
         grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+        align-items: end;
+        align-content: end;
+        z-index: 1000;
     }
     
     footer img {
