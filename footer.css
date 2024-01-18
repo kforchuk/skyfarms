@@ -8,12 +8,10 @@
 } */
 .footer-wrapper {
     background:linear-gradient(to top, #3E91C1, #efad74 30%,#D16B28 60%);
-    height: 30%;
+    height: 30vh;
     display:grid;
-    height: 40vh;
     grid-template-columns: 12.5% 25% 25% 25% 12.5%;
-    align-items: end;
-    align-content: end;
+    align-content: center;
 }
 footer img {
     width: 35%;
@@ -30,12 +28,19 @@ footer .contact {
     color:#eee;
     font-size: 1.75rem;
     grid-column: 4;
-    align-self: center;
     font-weight: 400;
 }
 
 footer .contact h4 {
     margin-bottom: -1.5rem;
+}
+
+footer .address {
+    font-family: 'Open Sans', sans-serif;
+    color:#eee;
+    font-size: 1.25rem;
+    grid-column: 3;
+    font-weight: 400;
 }
 footer li {
     list-style-type: none;
